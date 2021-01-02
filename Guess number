@@ -1,0 +1,15 @@
+n=18
+number_of_guesses = 9
+while number_of_guesses>=0:
+    n1=int(input('Guess the number : '))
+    if n1<18:
+        print('Increase the value''\nChances left : ',number_of_guesses)
+    elif n1>18:
+        print('Decrease the value''\nChances left : ',number_of_guesses)
+    else:
+        print('You Guessed the right number''\nYou Won''\nYou took ',9-number_of_guesses,'number of guesses to finish the game')
+        break
+    number_of_guesses = number_of_guesses-1
+    if number_of_guesses==-1:
+        print('game over')
+        break
